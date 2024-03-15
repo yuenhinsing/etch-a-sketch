@@ -1,0 +1,160 @@
+:root {
+    --ahsingx-orange: #f49305;
+    --light-brown: #e8b357;
+    --dark-brown: #e0972d;
+    --dark-beige: #f8cf6e;
+    --beige: #faf5e0;
+    --very-dark-brown: #ca9130;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--very-dark-brown);
+    transition: font-weight 0.3s ease-in-out;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+button {
+    font-family: inherit;
+}
+
+html {
+    font-family: "Roboto Slab", serif;
+    font-size: 62.5%;
+    color: var(--ahsingx-orange);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: beige;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 3;
+}
+.title {
+    font-size: 6rem;
+    color: var(--ahsingx-orange);
+    margin-bottom: 3rem;
+}
+
+.grid-container {
+    box-sizing: content-box;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--ahsingx-orange);
+    margin-bottom: 2rem;
+}
+
+.control-panel {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color: var(--dark-beige);
+}
+
+.controller {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    background-color: var(--ahsingx-orange);
+    color: white;
+    border-radius: 1rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.colors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.red,
+.green,
+.blue,
+.black,
+.random,
+.erase {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.red:hover,
+.green:hover,
+.blue:hover,
+.black:hover,
+.random:hover,
+.erase:hover {
+    opacity: 1;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.black {
+    background-color: black;
+}
+
+.random {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+}
+
+.erase {
+    background-color: white;
+}
+
+.change-density {
+    padding: 2rem;
+    width: 70%;
+    color: var(--very-dark-brown);
+    cursor: pointer;
+    border: none;
+    border-radius: 1rem;
+}

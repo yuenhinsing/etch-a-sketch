@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kumbh+Sans:wght@100..900&family=Lexend+Deca:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .grid {
+        border: 0.1px dotted rgb(255, 255, 255, 0.1);
+    }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1 class="title">etch a sketch!</h1>
+        <div class="grid-container"></div>
+        <p>Coded by <a href=https://instagram.com/ahsingx/>Ah Sing</a></p>
+    </div>
+    <div class="control-panel">
+        <div class="controller">
+            <h1 class="pick-a-color">pick a color</h1>
+            <div class="colors">
+                <div class="black"></div>
+                <div class="red"></div>
+                <div class="green"></div>
+                <div class="blue"></div>
+                <div class="random">?</div>
+                <div class="erase"></div>
+            </div>
+        </div>
+        <button class="change-density">
+            <h2>change density</h2>
+        </button>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
